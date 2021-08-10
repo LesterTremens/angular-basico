@@ -3,12 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+//Tarea: Crear modulo llamano Contador Modulo
+
+import { HeroesModule } from './heroes/heroes.module';
+import { contadorModule } from './contador/contador.module';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroesModule,
+    contadorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
